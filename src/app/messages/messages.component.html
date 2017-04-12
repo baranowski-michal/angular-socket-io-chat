@@ -1,0 +1,19 @@
+<div class="stream">
+    <div class="post" *ngFor="let message of messages" >
+      <div class="postUser">
+        <div class="postUser__portrait">
+          <span class="icon fa fa-user-circle-o"></span>
+        </div>
+        <div class="postUser__name">{{ message.author }}</div>
+      </div>
+      <div class="postBody">
+        <div class="postBody__content">
+          {{ message.body }}
+        </div>
+        <div class="postBody__date">
+          {{ '10:00' }}
+        </div>
+      </div>
+    </div>
+  </div>
+<app-sender (SendingMessage)="onReceivedMessage($event)"></app-sender>

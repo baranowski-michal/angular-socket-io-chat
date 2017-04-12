@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  newMsg = '';
+
+  onMsg(msg) {
+    this.newMsg = msg;
+  }
 }

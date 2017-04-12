@@ -19,9 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "flexbox.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": ["../node_modules/socket.io-client/dist/socket.io.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

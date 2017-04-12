@@ -1,3 +1,2 @@
-<h1>
-  {{title}}
-</h1>
+  <app-messages (SendingMessageToAppComponent)="onMsg($event)" class="main"></app-messages>
+  <app-users [msg]="newMsg" class="aside aside-1"></app-users>
